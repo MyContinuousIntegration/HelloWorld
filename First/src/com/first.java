@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
@@ -16,7 +17,7 @@ public class first {
 	  
 		// Find the element that's ID attribute is 'account'(My Account)
 	 
-	      driver.findElement(By.xpath("/html/body/div[1]/header/div/div[1]/div[3]/div/form/div[3]/div[1]/input")).sendKeys("Continuous Delivery");
+	      //driver.findElement(By.xpath("/html/body/div[1]/header/div/div[1]/div[3]/div/form/div[3]/div[1]/input")).sendKeys("Continuous Delivery");
   }
 	 
 	  @BeforeMethod
@@ -24,8 +25,10 @@ public class first {
 	  public void beforeMethod() {
 	 
 		  // Create a new instance of the Firefox driver
-	 
-	      driver = new FirefoxDriver();
+		  System.setProperty("webdriver.chrome.driver", "C://Users//MS//Downloads//chromedriver_win32//chromedriver.exe");
+	        WebDriver driver = new ChromeDriver();              
+	        //driver.get("http://www.google.com");
+	      //driver = new FirefoxDriver();
 	 
 	      //Put a Implicit wait, this means that any search for elements on the page could take the time the implicit wait is set for before throwing exception
 	 
@@ -37,13 +40,13 @@ public class first {
 	 
 	  }
 	 
-	  @AfterMethod
+	  //@AfterMethod
 	 
-	  public void afterMethod() {
+	  //public void afterMethod() {
 	 
 		  // Close the driver
 	 
-	      driver.quit();
+	      //driver.quit();
 	 
-	  }
+	  //}
 }
