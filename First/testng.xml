@@ -7,9 +7,4 @@
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
- capabilities: {
-    browserName: 'chrome',
-    chromeOptions: {
-      args: ['--no-sandbox']
-    }   
-},
+
