@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8236" started-at="2016-09-14T19:41:21Z" finished-at="2016-09-14T19:41:30Z">
+  <suite name="Default suite" duration-ms="10383" started-at="2016-09-15T13:22:47Z" finished-at="2016-09-15T13:22:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8236" started-at="2016-09-14T19:41:21Z" finished-at="2016-09-14T19:41:30Z">
-      <class name="com.first">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.first@51565ec2]" name="beforeMethod" is-config="true" duration-ms="8200" started-at="2016-09-14T20:41:21Z" finished-at="2016-09-14T20:41:30Z">
+    <test name="Default test" duration-ms="10383" started-at="2016-09-15T13:22:47Z" finished-at="2016-09-15T13:22:58Z">
+      <class name="com.second">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.second@1b604f19]" name="setup" is-config="true" duration-ms="3434" started-at="2016-09-15T14:22:47Z" finished-at="2016-09-15T14:22:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="main()[pri:0, instance:com.first@51565ec2]" name="main" duration-ms="15" started-at="2016-09-14T20:41:30Z" finished-at="2016-09-14T20:41:30Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Test()[pri:0, instance:com.second@1b604f19]" name="Test" duration-ms="6247" started-at="2016-09-15T14:22:51Z" finished-at="2016-09-15T14:22:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- main -->
-      </class> <!-- com.first -->
+        </test-method> <!-- Test -->
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:com.second@1b604f19]" name="aftertest" is-config="true" duration-ms="674" started-at="2016-09-15T14:22:57Z" finished-at="2016-09-15T14:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- com.second -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

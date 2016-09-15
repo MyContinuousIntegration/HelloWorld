@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
@@ -25,10 +26,11 @@ public class first {
 	  public void beforeMethod() {
 	 
 		  // Create a new instance of the Firefox driver
-		  System.setProperty("webdriver.chrome.driver", "C://Selenium//chromedriver_win32//chromedriver.exe");
-	        WebDriver driver = new ChromeDriver();      
+		  System.setProperty("webdriver.chrome.driver", "C://Users//MS//Downloads//chromedriver_win32//chromedriver.exe");
+	        WebDriver driver = new ChromeDriver();  
 	        ChromeOptions options =new ChromeOptions();
 	        options.addArguments("no-sandbox");
+	        
 	        //driver.get("http://www.google.com");
 	      //driver = new FirefoxDriver();
 	 
@@ -39,7 +41,7 @@ public class first {
 	      //Launch the Online Store Website
 	 
 	      driver.get("https://www.amazon.co.uk");
-	      driver.quit();
+	      driver.quit(); 
 	 
 	  }
 	 
@@ -49,7 +51,7 @@ public class first {
 	 
 		  // Close the driver
 	 
-	      //driver.quit();
+	      
 	 
 	  //}
 }
