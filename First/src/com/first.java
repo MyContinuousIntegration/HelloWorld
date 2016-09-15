@@ -26,7 +26,9 @@ public class first {
 	 
 		  // Create a new instance of the Firefox driver
 		  System.setProperty("webdriver.chrome.driver", "C://Selenium//chromedriver_win32//chromedriver.exe");
-	        WebDriver driver = new ChromeDriver();              
+	        WebDriver driver = new ChromeDriver();      
+	        ChromeOptions options =new ChromeOptions();
+	        options.addArguments("no-sandbox");
 	        //driver.get("http://www.google.com");
 	      //driver = new FirefoxDriver();
 	 
