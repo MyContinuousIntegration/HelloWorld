@@ -39,6 +39,7 @@ public class first {
 	      //Launch the Online Store Website
 	 
 	      driver.get("https://www.amazon.co.uk");
+	      driver.quit();
 	 
 	  }
 	 
